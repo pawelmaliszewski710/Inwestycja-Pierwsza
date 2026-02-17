@@ -5,9 +5,8 @@ export interface Apartment {
   rooms: number;
   area: number;
   gardenArea: number;
-  status: 'Dostępne' | 'Rezerwacja' | 'Sprzedane';
-  price?: number;
-  polygonPoints?: string; // Współrzędne dla SVG mapy (opcjonalne)
+  polygonPoints?: string | string[]; // Współrzędne dla SVG mapy (opcjonalne)
+  imageUrl?: string; // Ścieżka do obrazu rzutu mieszkania (opcjonalne)
 }
 
 export type SortOption = 'floor' | 'rooms' | 'area' | 'gardenArea' | 'status';

@@ -2,17 +2,19 @@ import React, { useEffect, useRef } from 'react';
 import * as L from 'leaflet';
 
 // Współrzędne: Radzymin, Nowa Lokalizacja
-const CENTER_LAT = 52.41510454912447;
-const CENTER_LNG = 21.18485507391127;
+const CENTER_LAT = 52.41106452573477;
+const CENTER_LNG = 21.165144314527712;
 
 const POIS = [
   // Warszawa - Pałac Kultury i Nauki
-  { id: 1, lat: 52.2318, lng: 21.0060, title: "Pałac Kultury (Warszawa)", dist: "27 km", icon: "star" },
-  // Lokalne punkty w Radzyminie
-  { id: 2, lat: 52.4162, lng: 21.1795, title: "Urząd Miasta i Gminy", dist: "450 m", icon: "building" },
-  { id: 3, lat: 52.4135, lng: 21.1830, title: "Przedszkole nr 1", dist: "200 m", icon: "smile" },
-  { id: 4, lat: 52.4085, lng: 21.1780, title: "Basen (Radzymiński Ośrodek Sportu)", dist: "900 m", icon: "waves" },
-  { id: 5, lat: 52.4182, lng: 21.1745, title: "Przystanek Autobusowy", dist: "850 m", icon: "bus" },
+  { id: 1, lat: 52.41147, lng: 21.17744, title: "Sklep Lidl", dist: "1.8 km", icon: "shop" },
+  { id: 2, lat: 52.41517, lng: 21.17844, title: "Radzymiński Ośrodek Kultury i Sportu", dist: "1.7 km", icon: "waves" },
+  { id: 3, lat: 52.41721, lng: 21.16606, title: "Szkoła Podstawowa Nr 2", dist: "900 m", icon: "school" },
+  { id: 4, lat: 52.41342, lng: 21.18175, title: "Park Eleonory Czartoryskiej", dist: "2.3 km", icon: "park" },
+  { id: 5, lat: 52.42431, lng: 21.17552, title: "Radzymin- Stacja kolejowa", dist: "2 km", icon: "train" },
+  { id: 6, lat: 52.41806, lng: 21.18205, title: "Kolegiata pw. Przemienienia Pańskiego i św. Jana Chrzciciela", dist: "2.8 m", icon: "church" },
+  { id: 7, lat: 52.41088, lng: 21.17063, title: "Przedszkole i Żłobek Moje Montessori", dist: "550 m", icon: "kid" },
+  { id: 8, lat: 52.40766, lng: 21.17510, title: "Przystanek szybkiej linii R9", dist: "1.2 km", icon: "bus" },
 ];
 
 export const InteractiveMap: React.FC = () => {
@@ -47,7 +49,7 @@ export const InteractiveMap: React.FC = () => {
           <div class="investment-pulse"></div>
           <div class="investment-dot"></div>
           <div style="position: absolute; bottom: 35px; left: 50%; transform: translateX(-50%); background: #064e3b; color: white; padding: 6px 12px; border-radius: 6px; font-weight: bold; font-size: 14px; white-space: nowrap; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-            ŻEROMSKIEGO 2
+            Sybiraków
           </div>
         </div>
       `,
@@ -70,7 +72,62 @@ export const InteractiveMap: React.FC = () => {
         svgContent = '<path d="M2 12h20M2 12c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 5-2.5 7.5 0M2 17h20M2 17c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 5-2.5 7.5 0"></path>';
       } else if (poi.icon === 'bus') { // Przystanek
         svgContent = '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><circle cx="15.5" cy="8.5" r="1.5"></circle><circle cx="8.5" cy="15.5" r="1.5"></circle><circle cx="15.5" cy="15.5" r="1.5"></circle>';
-      } else { // Default / Przedszkole
+      } else if (poi.icon === "shop") {
+        svgContent = `
+          <path d="M3 9l2-5h14l2 5"></path>
+          <path d="M3 9h18"></path>
+          <path d="M5 9v10h14V9"></path>
+          <path d="M9 19v-6h6v6"></path>
+          <path d="M7 9v2M11 9v2M15 9v2M19 9v2"></path>
+         `; 
+      } else if (poi.icon === "school") {
+        svgContent = `
+          <rect x="6" y="7" width="12" height="13" rx="3"></rect>
+          <path d="M9 7V6a3 3 0 0 1 6 0v1"></path>
+          <rect x="9" y="12" width="6" height="3" rx="1"></rect>
+          <path d="M6 11h12"></path>
+        `;
+      } else if (poi.icon === "park") {
+        svgContent = `
+          <path d="M8 4c-3 0-5 2.5-5 5.5 0 2 1 3.5 2.5 4.5V20h4v-6c1.5-1 2.5-2.5 2.5-4.5C12 6.5 10 4 8 4z"></path>
+          <path d="M16 6c-2.5 0-4.5 2-4.5 4.5 0 1.8 1 3.2 2.2 4V20h4.3v-5.5c1.3-.8 2.2-2.2 2.2-4C20.2 8 18.4 6 16 6z"></path>
+        `;
+      } else if (poi.icon === "train") {
+        svgContent = `
+          <rect x="6" y="3" width="12" height="14" rx="3"></rect>
+          <path d="M6 13h12"></path>
+          <circle cx="9" cy="16" r="1"></circle>
+          <circle cx="15" cy="16" r="1"></circle>
+          <path d="M8 7h2M14 7h2"></path>
+          <path d="M12 17v3"></path>
+          <path d="M9 20h6"></path>
+        `;
+      } else if (poi.icon === "church") {
+        svgContent = `
+          <path d="M11 3h2v4h3v2h-3v4h-2V9H8V7h3z"></path>
+          <path d="M6 11l6-4 6 4"></path>
+          <path d="M7 11v9h10v-9"></path>
+          <path d="M11 16v4h2v-4"></path>
+        `;
+      } else if (poi.icon === "kid") {
+        svgContent = `
+          <circle cx="9" cy="6" r="2"></circle>
+          <circle cx="15" cy="6" r="2"></circle>
+          <circle cx="12" cy="10" r="4"></circle>
+          <circle cx="9" cy="14" r="3"></circle>
+          <circle cx="15" cy="14" r="3"></circle>
+        `;
+      } else if (poi.icon === "bus") {
+        svgContent = `
+          <rect x="5" y="3" width="14" height="14" rx="3"></rect>
+          <path d="M5 11h14"></path>
+          <circle cx="9" cy="15" r="1"></circle>
+          <circle cx="15" cy="15" r="1"></circle>
+          <path d="M8 7h2M14 7h2"></path>
+          <path d="M9 17v3M15 17v3"></path>
+        `;
+      }
+       else { // Default / Przedszkole
          svgContent = '<circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>'; // Buźka
       }
 

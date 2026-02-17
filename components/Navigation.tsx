@@ -29,10 +29,10 @@ export const Navigation: React.FC = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center gap-2 cursor-pointer group">
-              <div className="w-10 h-10 bg-primary-900 rounded-lg flex items-center justify-center text-white font-display font-bold text-xl shadow-lg group-hover:bg-primary-700 transition-colors">
+              <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:bg-primary-700 transition-colors">
                 DS
               </div>
-              <span className="font-display font-bold text-2xl tracking-tight text-primary-900 group-hover:text-primary-700 transition-colors">DEV</span>
+              <span className="font-bold text-2xl tracking-tight text-gray-900">DEV</span>
             </a>
           </div>
 
@@ -43,7 +43,7 @@ export const Navigation: React.FC = () => {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleScroll(e, link.href)}
-                className="text-gray-600 hover:text-primary-900 font-medium text-sm transition-colors cursor-pointer relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-[-4px] after:left-0 after:bg-primary-900 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+                className="text-gray-600 hover:text-primary-600 font-medium text-sm transition-colors cursor-pointer"
               >
                 {link.name}
               </a>
@@ -53,11 +53,11 @@ export const Navigation: React.FC = () => {
           {/* CTA Button Desktop */}
           <div className="hidden lg:flex items-center">
             <a
-              href="tel:+48123456789"
-              className="flex items-center gap-2 bg-primary-900 text-white px-6 py-2.5 rounded-full hover:bg-primary-800 transition-all hover:shadow-lg hover:-translate-y-0.5 font-semibold text-sm"
+              href="tel:+48519452981"
+              className="flex items-center gap-2 bg-primary-600 text-white px-5 py-2.5 rounded-lg hover:bg-primary-700 transition-all hover:shadow-md font-semibold text-sm"
             >
               <Phone size={16} />
-              <span>+48 123 456 789</span>
+              <span>+48 519 452 981</span>
             </a>
           </div>
 
@@ -65,7 +65,7 @@ export const Navigation: React.FC = () => {
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-900 hover:text-primary-700 focus:outline-none p-2"
+              className="text-gray-900 hover:text-primary-600 focus:outline-none p-2"
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -82,14 +82,14 @@ export const Navigation: React.FC = () => {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleScroll(e, link.href)}
-                className="block px-4 py-3 rounded-xl text-base font-medium text-gray-700 hover:text-primary-900 hover:bg-primary-50 cursor-pointer transition-colors"
+                className="block px-4 py-3 rounded-lg text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 cursor-pointer transition-colors"
               >
                 {link.name}
               </a>
             ))}
             <a
               href="tel:+48123456789"
-              className="block w-full text-center mt-6 px-5 py-3 rounded-xl bg-primary-900 text-white font-bold shadow-md"
+              className="block w-full text-center mt-6 px-5 py-3 rounded-lg bg-primary-600 text-white font-bold shadow-md"
             >
               Zadzwoń: +48 123 456 789
             </a>
