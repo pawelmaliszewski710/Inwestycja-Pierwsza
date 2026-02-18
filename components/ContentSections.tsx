@@ -105,7 +105,7 @@ export const StandardsSection: React.FC = () => (
           <ul className="space-y-4">
              <StandardListItem icon={<Shield size={20} />} text="Teren zamknięty i ogrodzony" />
              <StandardListItem icon={<Shield size={20} />} text="Kameralna zabudowa" />
-             <StandardListItem icon={<Shield size={20} />} text="Pełna własność gruntu" />
+             <StandardListItem icon={<Shield size={20} />} text="Ścieżka rowerowa" />
           </ul>
         </div>
       </div>
@@ -123,7 +123,7 @@ export const StandardsSection: React.FC = () => (
           </p>
           <ul className="space-y-4">
              <StandardListItem icon={<Car size={20} />} text="2 miejsca postojowe w cenie" />
-             <StandardListItem icon={<Layers size={20} />} text="Izolacja styropianem grafitowym" />
+             <StandardListItem icon={<Layers size={20} />} text="Tynk elewacyjny wysokiej jakości" />
           </ul>
         </div>
         <div>
@@ -146,7 +146,7 @@ export const StandardsSection: React.FC = () => (
             na ogród z salonu, idealne na grilla czy zabawę dla dzieci.
           </p>
           <ul className="space-y-4">
-             <StandardListItem icon={<TreePine size={20} />} text="Ogródki do 100m²" />
+             <StandardListItem icon={<TreePine size={20} />} text="Ogródki do 150m²" />
              <StandardListItem icon={<TreePine size={20} />} text="Przestronne balkony na piętrze" />
           </ul>
         </div>
@@ -167,14 +167,14 @@ export const TechSpecs: React.FC = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-bold mb-12 text-center text-white">Specyfikacja Techniczna</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <TechItem icon={<Flame />} text="Ogrzewanie podłogowe w całym domu" />
+        <TechItem icon={<Flame />} text="Dobra lokalizacja" />
         <TechItem icon={<Wind />} text="Energooszczędne okna 3-szybowe" />
         <TechItem icon={<Droplets />} text="Nowoczesny piec gazowy kondensacyjny" />
-        <TechItem icon={<VolumeX />} text="Podwójne ściany między lokalami (akustyka)" />
-        <TechItem icon={<Layers />} text="Ściany z pustaków ceramicznych" />
+        <TechItem icon={<VolumeX />} text="Ściany wykonane z wysokiej jakości materiałów akustycznych" />
+        <TechItem icon={<Layers />} text="Chodnik" />
         <TechItem icon={<Grid />} text="Media miejskie (woda, kanalizacja, gaz)" />
         <TechItem icon={<Shield />} text="Własna brama i furtka dla każdego" />
-        <TechItem icon={<Car />} text="Podjazdy o pow. ok 50 m²" />
+        <TechItem icon={<Car />} text="Podjazdy o pow. ok 60 m²" />
         <TechItem icon={<Layers />} text="Internet Światłowodowy" />
       </div>
     </div>
@@ -216,8 +216,8 @@ export const LayoutInfo: React.FC = () => (
           </p>
           <ul className="space-y-3">
              <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> Większy metraż całkowity</li>
-             <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> Możliwość wydzielenia dwóch lokali</li>
              <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> Duży balkon + opcja ogrodu</li>
+             <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> Użytkowe poddasze</li>
           </ul>
         </div>
       </div>

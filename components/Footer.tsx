@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-bold mb-6 text-white inline-block">Deweloper</h4>
             <div className="text-gray-400 text-sm space-y-3">
-              <p className="font-bold text-white text-lg mb-2">SZMARAGDOWA - NIERUCHOMOŚCI SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</p>
+              <p className="font-bold text-white text-lg mb-2">Szmaragdowa Nieruchomości Sp. z o.o.</p>
               <p>ul. Starej Baśni 6, Rybienko Nowe</p>
               <p>07-200 Wyszków</p>
               <div className="pt-4 space-y-1 text-xs opacity-60">
@@ -39,23 +39,12 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Column 3: Addresses */}
+          {/* Column 3: Disclaimer */}
           <div>
-            <h4 className="text-lg font-bold mb-6 text-white inline-block">Inne inwestycje</h4>
-            <ul className="space-y-4 text-sm text-gray-400">
-              <li>
-                <p className="font-bold text-white">Osiedle Leśne</p>
-                <p>ul. Leśna 5, Marki</p>
-              </li>
-              <li>
-                <p className="font-bold text-white">Willa Parkowa</p>
-                <p>ul. Parkowa 12, Ząbki</p>
-              </li>
-              <li>
-                <p className="font-bold text-white">Zielone Tarasy</p>
-                <p>ul. Polna 8, Radzymin</p>
-              </li>
-            </ul>
+            <h4 className="text-lg font-bold mb-6 text-white inline-block">Informacje</h4>
+            <p className="text-sm text-gray-400 leading-relaxed">
+              Zdjęcia, opisy oraz wizualizacje zamieszczone na stronie mają charakter poglądowy i nie stanowią oferty w rozumieniu Kodeksu cywilnego.
+            </p>
           </div>
 
           {/* Column 4: Contact/CTA */}

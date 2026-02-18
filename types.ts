@@ -6,7 +6,7 @@ export interface Apartment {
   area: number;
   gardenArea: number;
   polygonPoints?: string | string[]; // Współrzędne dla SVG mapy (opcjonalne)
-  imageUrl?: string; // Ścieżka do obrazu rzutu mieszkania (opcjonalne)
+  imageUrls?: string[]; // Ścieżki do obrazów rzutów mieszkania (opcjonalne)
 }
 
 export type SortOption = 'floor' | 'rooms' | 'area' | 'gardenArea' | 'status';

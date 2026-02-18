@@ -55,7 +55,7 @@ export const Hero: React.FC = () => {
           {/* Badge on Image */}
           <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-5 py-3 rounded-lg shadow-md max-w-xs">
              <p className="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Status budowy</p>
-             <p className="text-gray-900 font-bold text-lg">Zakończenie I etapu: Q4 2024</p>
+             <p className="font-bold text-lg text-primary-600">ZAKOŃCZONA</p>
           </div>
         </div>
       </div>
@@ -66,8 +66,8 @@ export const Hero: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
             <FeatureBox icon={<Home className="text-primary-600" />} title="Media miejskie" desc="Pełne uzbrojenie terenu" />
             <FeatureBox icon={<ShieldCheck className="text-primary-600" />} title="Prywatność" desc="Własna brama i furtka" />
-            <FeatureBox icon={<Maximize className="text-primary-600" />} title="Duże podjazdy" desc="Powierzchnia ok. 50 m²" />
-            <FeatureBox icon={<Home className="text-primary-600" />} title="Ogródki" desc="Nawet do 100 m²" />
+            <FeatureBox icon={<Maximize className="text-primary-600" />} title="Duże podjazdy" desc="Powierzchnia ok. 60 m²" />
+            <FeatureBox icon={<Home className="text-primary-600" />} title="Ogródki" desc="Nawet do 150m" />
             <FeatureBox icon={<Wifi className="text-primary-600" />} title="Technologia" desc="Światłowód i ogrzewanie" />
           </div>
         </div>

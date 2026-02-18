@@ -123,7 +123,7 @@ export const InteractiveEstateMap: React.FC = () => {
     e.stopPropagation();
     if (!isDrawingMode) {
       const clickedApt = localApartments.find(apt => apt.id === aptId);
-      if (clickedApt?.imageUrl) setSelectedApartment(clickedApt);
+      if (clickedApt?.imageUrls && clickedApt.imageUrls.length > 0) setSelectedApartment(clickedApt);
     }
   };
 
@@ -256,7 +256,7 @@ export const InteractiveEstateMap: React.FC = () => {
             className: `
               ${getPolygonClasses(building.floor, isHovered)}
               ${isDrawingMode ? 'pointer-events-none opacity-20' : ''} 
-              cursor-pointer ${building.imageUrl ? '' : 'cursor-default'}
+              cursor-pointer ${building.imageUrls && building.imageUrls.length > 0 ? '' : 'cursor-default'}
             `,
             onMouseEnter: () => !isDrawingMode && setHoveredBuilding(building),
             onMouseLeave: () => !isDrawingMode && setHoveredBuilding(null),
@@ -331,7 +331,7 @@ export const InteractiveEstateMap: React.FC = () => {
             )}
           </div>
           <div className="mt-3 pt-3 border-t border-gray-100 text-[11px] font-bold text-center">
-            {hoveredBuilding.imageUrl 
+            {hoveredBuilding.imageUrls && hoveredBuilding.imageUrls.length > 0
               ? <span className="text-primary-600">Kliknij, aby zobaczyć rzut</span> 
               : <span className="text-gray-400 italic font-medium">Rzut wkrótce</span>}
           </div>

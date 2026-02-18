@@ -8,7 +8,7 @@ export const AboutInvestor: React.FC = () => (
       <h2 className="text-3xl font-bold text-gray-900 mb-8">Inwestycje budowane na solidnych fundamentach</h2>
       <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
         <p>
-          DS DEV to firma deweloperska z wieloletnim doświadczeniem w realizacji kameralnych osiedli mieszkaniowych. 
+          DS Szmaragdowa to firma deweloperska z ogromnym doświadczeniem w realizacji kameralnych osiedli mieszkaniowych. 
           Naszą misją jest tworzenie miejsc, które nie są tylko budynkami, ale prawdziwymi domami.
         </p>
         <p>
@@ -79,8 +79,8 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
               <div className="flex items-start gap-4">
                  <div className="p-3 bg-primary-50 rounded-lg text-primary-700"><MapPin /></div>
                  <div>
-                   <h4 className="font-bold text-gray-900 text-lg mb-1">Biuro Sprzedaży</h4>
-                   <p className="text-gray-600">ul. Starej Baśni 6<br/>07-200 Rybienko Nowe</p>
+                   <h4 className="font-bold text-gray-900 text-lg mb-1">Biuro Dewelopera</h4>
+                   <p className="text-gray-600">ul. Sybiraków 10<br/>05-250 Radzymin</p>
                  </div>
               </div>
               <div className="flex items-start gap-4">
@@ -104,7 +104,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
           <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100" id="formularz">
             {/* Map Placeholder */}
             <div className="w-full h-56 bg-gray-100 rounded-xl mb-8 relative overflow-hidden flex items-center justify-center group">
-               <img src="https://picsum.photos/800/600?random=map" alt="Mapa" className="absolute inset-0 w-full h-full object-cover opacity-70 transition-opacity group-hover:opacity-90" />
+               <img src="https://lh3.googleusercontent.com/pw/AP1GczPXEzn7YW05Lnap5GAIH3q4bpSJd3eBf_IC31_DYghyRpvD0S9Rd6FObkl1D-uCL9CJPxZPhavzRHVxve4oz8g5aqF1ozGoMf_E4mnG0U-PoT1BbzSspTBWKNWSV-xTLT7qlMozeD3Hz0wXgR7jRxeo=w1010-h669-s-no-gm?authuser=1" alt="Mapa" className="absolute inset-0 w-full h-full object-cover opacity-70 transition-opacity group-hover:opacity-90" />
                <div className="relative z-10 flex flex-col gap-3">
                   <a 
                     href="https://maps.app.goo.gl/MpkHZcT6qQxcMKfz6" 
