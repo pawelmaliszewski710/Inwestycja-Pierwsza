@@ -90,17 +90,10 @@ export const ProcessSection: React.FC = () => {
             />
             <TimelineItem 
               step={6} 
-              icon={<Key />} 
-              title="Odbiór techniczny" 
-              desc="Przekazanie kluczy i sprawdzenie stanu lokalu." 
-              side="right" 
-            />
-            <TimelineItem 
-              step={7} 
               icon={<Home />} 
               title="Przeniesienie własności" 
               desc="Finalny akt notarialny przenoszący własność." 
-              side="left" 
+              side="right" 
             />
           </div>
         </div>

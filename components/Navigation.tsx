@@ -29,10 +29,7 @@ export const Navigation: React.FC = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center gap-2 cursor-pointer group">
-              <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:bg-primary-700 transition-colors">
-                DS
-              </div>
-              <span className="font-bold text-2xl tracking-tight text-gray-900">DEV</span>
+              <span className="font-bold text-2xl tracking-tight text-white bg-primary-600 rounded-lg p-1">Szmaragdowa</span>
             </a>
           </div>
 
@@ -88,10 +85,10 @@ export const Navigation: React.FC = () => {
               </a>
             ))}
             <a
-              href="tel:+48123456789"
+              href="tel:+48519452981"
               className="block w-full text-center mt-6 px-5 py-3 rounded-lg bg-primary-600 text-white font-bold shadow-md"
             >
-              Zadzwoń: +48 123 456 789
+              Zadzwoń: +48 519 452 981
             </a>
           </div>
         </div>

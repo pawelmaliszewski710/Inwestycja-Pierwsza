@@ -97,7 +97,7 @@ export const StandardsSection: React.FC = () => (
         </div>
         <div className="order-1 lg:order-2">
           <div className="w-12 h-1 bg-primary-600 mb-6 rounded-full"></div>
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">Bezczynszowe mieszkania na wyasfaltowanym osiedlu</h3>
+          <h3 className="text-3xl font-bold text-gray-900 mb-4">Bezczynszowe mieszkania na kameralnym osiedlu</h3>
           <p className="text-gray-600 mb-8 text-lg leading-relaxed">
             Zapewniamy pełną prywatność na terenie zamkniętym. Każdy budynek został zaprojektowany z myślą o kameralności.
             Brak czynszu do wspólnoty to realna oszczędność w domowym budżecie. Płacisz tylko za to, co zużyjesz.
@@ -116,14 +116,14 @@ export const StandardsSection: React.FC = () => (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <div className="w-12 h-1 bg-primary-600 mb-6 rounded-full"></div>
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">Nowoczesna architektura i miejsca postojowe</h3>
+          <h3 className="text-3xl font-bold text-gray-900 mb-4">Nowoczesna architektura oraz własna brama z furtką</h3>
           <p className="text-gray-600 mb-8 text-lg leading-relaxed">
             Stawiamy na nowoczesny design i najwyższej klasy materiały. Elewacje wykończone tynkiem silikonowym i elementami drewnopodobnymi.
             Każdy lokal posiada przypisane dwa wygodne miejsca postojowe bezpośrednio przed budynkiem.
           </p>
           <ul className="space-y-4">
              <StandardListItem icon={<Car size={20} />} text="2 miejsca postojowe w cenie" />
-             <StandardListItem icon={<Layers size={20} />} text="Tynk elewacyjny wysokiej jakości" />
+             <StandardListItem icon={<Layers size={20} />} text="Materiały wysokiej jakości" />
           </ul>
         </div>
         <div>
@@ -217,7 +217,7 @@ export const LayoutInfo: React.FC = () => (
           <ul className="space-y-3">
              <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> Większy metraż całkowity</li>
              <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> Duży balkon + opcja ogrodu</li>
-             <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> Użytkowe poddasze</li>
+             <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> Wygodne schody na strych</li>
           </ul>
         </div>
       </div>

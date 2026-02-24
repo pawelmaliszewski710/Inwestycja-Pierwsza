@@ -68,7 +68,7 @@ export const Hero: React.FC = () => {
             <FeatureBox icon={<ShieldCheck className="text-primary-600" />} title="Prywatność" desc="Własna brama i furtka" />
             <FeatureBox icon={<Maximize className="text-primary-600" />} title="Duże podjazdy" desc="Powierzchnia ok. 60 m²" />
             <FeatureBox icon={<Home className="text-primary-600" />} title="Ogródki" desc="Nawet do 150m" />
-            <FeatureBox icon={<Wifi className="text-primary-600" />} title="Technologia" desc="Światłowód i ogrzewanie" />
+            <FeatureBox icon={<Wifi className="text-primary-600" />} title="Technologia" desc="Światłowód" />
           </div>
         </div>
       </div>
