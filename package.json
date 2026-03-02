@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://pawelmaliszewski710.github.io/Inwestycja-Pierwsza",
+  "homepage": "https:szmaragdowa-nieruchomosci.pl",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "leaflet": "1.9.4",
